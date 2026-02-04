@@ -22,6 +22,7 @@ The backend is written in **Python using Flask** and follows these steps:
 4. **Calculates SGPA** using the standard credit-weighted formula:
    SGPA = Σ (Grade Point × Subject Credit) / Total Credits
 5. Returns the final SGPA to the frontend, where it is displayed instantly
+6. Considered that percentage scored in the missing subject to be 60%(8 Grade Points) for statistical justice
 
 All calculation logic is handled on the server to ensure **accuracy and consistency**.
 
