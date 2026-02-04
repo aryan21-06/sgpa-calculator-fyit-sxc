@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SGPA Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>SGPA Calculator</h2>
+
+    <div class="form">
+        <input type="number" placeholder="Maths" id="maths">
+        <input type="number" placeholder="Minor" id="minor">
+        <input type="number" placeholder="OE1" id="oe1">
+        <input type="number" placeholder="OE2" id="oe2">
+        <input type="number" placeholder="IKS" id="iks">
+        <input type="number" placeholder="COI" id="coi">
+        <input type="number" placeholder="Computer Networks" id="computer_networks">
+        <input type="number" placeholder="C Programming" id="c_programming">
+        <button onclick="calculateSGPA()">Calculate SGPA</button>
+    </div>
+
+    <h3 id="result"></h3>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
